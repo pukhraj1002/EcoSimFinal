@@ -29,7 +29,7 @@ cd EcoSim
 4. Open your browser at ``` http://localhost:3000.```
 
 ## Contributing
-1.Fork the repo.
+1.Fork the repository.
 
 2.Create a feature branch: git checkout -b feature-name.
 
