@@ -184,29 +184,26 @@ export function EcosimLandingPage() {
         </section>
 
         <section id="quiz" className="mb-16">
-          <h2 className="text-3xl font-bold mb-4">Environmental Quiz</h2>
-          <Card>
-            <CardHeader>
-              <CardTitle>Test Your Knowledge</CardTitle>
-              <CardDescription>
-                Take our quiz to learn more about Earths ecosystems and climate
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="flex items-center space-x-2">
-                  <Brain className="h-8 w-8 text-green-600" />
-                  <span>10 Questions</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Clock className="h-8 w-8 text-blue-600" />
-                  <span>15 Minutes</span>
-                </div>
-              </div>
-              <Button className="mt-4">Start Quiz</Button>
-            </CardContent>
-          </Card>
-        </section>
+  <h2 className="text-3xl font-bold mb-4">Environmental Quiz</h2>
+  <Card>
+    <CardHeader>
+      <CardTitle>Test Your Knowledge</CardTitle>
+      <CardDescription>
+        Take our quiz to learn more about Earths ecosystems and climate
+      </CardDescription>
+    </CardHeader>
+    <CardContent>
+      <iframe
+        src="https://eco-sim-quiz.vercel.app/"
+        width="100%"
+        height="600"
+        className="mt-4 border rounded-lg"
+        title="Environmental Quiz"
+        allowFullScreen
+      ></iframe>
+    </CardContent>
+  </Card>
+</section>
 
         <section id="interactive-map" className="mb-16">
           <h2 className="text-3xl font-bold mb-4">Interactive Map</h2>
