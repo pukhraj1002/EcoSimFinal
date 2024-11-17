@@ -53,7 +53,7 @@ export function EcosimLandingPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-100 to-blue-100">
-      <header className="bg-green-700 text-white p-4 sticky top-0 z-50">
+      <header className="bg-black text-white p-4 sticky top-0 z-50">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold flex items-center">
             <Globe className="mr-2" />
@@ -170,14 +170,14 @@ export function EcosimLandingPage() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="aspect-video bg-gray-200 flex items-center justify-center rounded-lg overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=400&width=800"
-                  alt="NASA's Eyes on Earth Visualization"
-                  width={800}
-                  height={400}
-                  className="object-cover w-full h-full"
-                />
+              <div className="w-full h-[400px] overflow-hidden relative rounded-lg">
+                <iframe
+                  title="Earth"
+                  src="https://eyes.nasa.gov/apps/earth/#/satellites"
+                  allowFullScreen
+                  allow="autoplay; fullscreen; xr-spatial-tracking"
+                  className="absolute top-[-100px] left-0 w-full h-[800px]"
+                ></iframe>
               </div>
             </CardContent>
           </Card>
@@ -311,6 +311,28 @@ export function EcosimLandingPage() {
           </Tabs>
         </section>
 
+        <section id="information" className="mb-16">
+          <h2 className="text-3xl font-bold mb-4">IoT Simulation</h2>
+          <Card>
+            <CardHeader>
+              <CardTitle>Interactive IoT Simulation</CardTitle>
+              <CardDescription>
+                Experiment with the live IoT simulation embedded below:
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <iframe
+                src="https://wokwi.com/projects/414817867646158849"
+                width="100%"
+                height="600"
+                className="mt-4 border rounded-lg"
+                style={{ border: "1px solid #ccc" }}
+                title="Wokwi IoT Simulation"
+                allowFullScreen
+              ></iframe>
+            </CardContent>
+          </Card>
+        </section>
         <section id="climate-time-machine" className="mb-16">
           <h2 className="text-3xl font-bold mb-4">Climate Time Machine</h2>
           <Card>
