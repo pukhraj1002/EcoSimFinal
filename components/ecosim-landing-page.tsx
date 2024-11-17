@@ -86,6 +86,13 @@ export function EcosimLandingPage() {
               Information
             </Link>
             <Link
+              href="#iot"
+              className="hover:underline flex items-center"
+            >
+              <Clock className="mr-1" size={16} />
+              IOT Simulation
+            </Link>
+            <Link
               href="#climate-time-machine"
               className="hover:underline flex items-center"
             >
@@ -127,6 +134,13 @@ export function EcosimLandingPage() {
             >
               <Info className="mr-1" size={16} />
               Information
+            </Link>
+            <Link
+              href="#iot"
+              className="hover:underline flex items-center"
+            >
+              <Clock className="mr-1" size={16} />
+              IOT Simulation
             </Link>
             <Link
               href="#climate-time-machine"
@@ -308,7 +322,7 @@ export function EcosimLandingPage() {
           </Tabs>
         </section>
 
-        <section id="information" className="mb-16">
+        <section id="iot" className="mb-16">
           <h2 className="text-3xl font-bold mb-4">IoT Simulation</h2>
           <Card>
             <CardHeader>
@@ -340,24 +354,7 @@ export function EcosimLandingPage() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <Button className="flex items-center justify-center gap-2">
-                  <Clock className="h-4 w-4" />
-                  Sea Level
-                </Button>
-                <Button className="flex items-center justify-center gap-2">
-                  <Clock className="h-4 w-4" />
-                  Carbon Dioxide
-                </Button>
-                <Button className="flex items-center justify-center gap-2">
-                  <Clock className="h-4 w-4" />
-                  Global Temperature
-                </Button>
-                <Button className="flex items-center justify-center gap-2">
-                  <Clock className="h-4 w-4" />
-                  Arctic Sea Ice
-                </Button>
-              </div>
+              
               <div className="mt-4 aspect-video bg-gray-200 flex items-center justify-center rounded-lg overflow-hidden">
                 <Image
                   src="/placeholder.svg?height=400&width=800"
