@@ -257,19 +257,19 @@ export function EcosimLandingPage() {
                   <p>
     <b>Tropical Rainforests:</b> Tropical rainforests, often referred to as the "lungs of the Earth," are teeming with life. Located near the equator, these forests receive abundant rainfall year-round, creating a lush, green environment. Home to more species than any other biome, rainforests are vital for global biodiversity, hosting millions of plant and animal species. The dense canopy layers, from the forest floor to the towering treetops, provide a variety of habitats for countless organisms, many of which are yet to be discovered.
   </p>
-  <p ">
+  <p>
     <b>Deserts:</b> Deserts are defined by their dry conditions, receiving less than 10 inches of rain per year. Despite the harsh climate, deserts are not devoid of life. Adapted to extreme temperatures and water scarcity, plants and animals in these regions have evolved unique survival strategies. From cacti that store water in their stems to nocturnal creatures that avoid the daytime heat, desert ecosystems are resilient and full of surprises.
   </p>
-  <p ">
+  <p>
     <b>Grasslands:</b> Grasslands are vast, open areas dominated by grasses and occasional trees. Found in regions with seasonal rainfall, grasslands provide habitat for large herbivores like bison, zebras, and antelope. These ecosystems are crucial for food production, particularly in agricultural regions, and they play an important role in the carbon cycle, helping to sequester carbon from the atmosphere.
   </p>
-  <p ">
+  <p>
     <b>Oceans:</b> Oceans cover about 70% of the Earth's surface and are vital to life on Earth. Marine ecosystems range from shallow coastal waters to deep ocean trenches. Coral reefs, often called the "rainforests of the sea," support an incredible diversity of marine life, from vibrant fish to delicate corals. The open ocean, while less biologically rich, is essential for global climate regulation and serves as a major source of oxygen through phytoplankton.
   </p>
-  <p ">
+  <p>
     <b>Arctic Tundra:</b> The Arctic tundra is a cold, barren landscape where harsh winds and low temperatures dominate. Located at the Earth's poles, it is home to specially adapted plants and animals that survive in extreme cold and with minimal sunlight. Permafrost, a layer of frozen soil, is a defining feature of this biome. Despite the inhospitable conditions, migratory birds, polar bears, and Arctic foxes thrive in this unique ecosystem.
   </p>
-  <p ">
+  <p>
     <b>Conclusion:</b> Exploring Earth's ecosystems is a reminder of the interconnectedness of all life. From the driest deserts to the most frigid tundras, each ecosystem plays a critical role in sustaining biodiversity and regulating the planet's climate. Understanding and protecting these ecosystems is essential for preserving the balance of life on Earth, ensuring that future generations can experience the incredible diversity of our planet's natural world.
   </p>
                 </CardContent>
@@ -287,19 +287,19 @@ export function EcosimLandingPage() {
                   <p ">
     <b>Atmospheric Interactions:</b> The Earth's atmosphere is a crucial factor in regulating its climate. It consists of gases such as nitrogen, oxygen, and carbon dioxide, which trap heat from the sun, creating the greenhouse effect. This effect maintains the Earth's temperature at a level suitable for life. However, human activities, like burning fossil fuels, have increased the concentration of greenhouse gases, leading to global warming and climate change.
   </p>
-  <p ">
+  <p>
     <b>Oceans and Climate:</b> Oceans play a vital role in regulating the Earth's climate by absorbing and distributing heat around the planet. The ocean currents, such as the Gulf Stream, act as conveyors of heat, transporting warm water from the equator to the poles. This movement helps maintain global temperature balances. Oceans also absorb large amounts of carbon dioxide, which influences climate dynamics.
   </p>
-  <p ">
+  <p>
     <b>Land Surface and Climate:</b> The Earth's land surface influences climate patterns through its interactions with the atmosphere. Factors such as vegetation cover, soil moisture, and land use affect how heat is absorbed or reflected. Deforestation, urbanization, and changes in agriculture can alter these interactions, leading to changes in local and global climates.
   </p>
-  <p ">
+  <p>
     <b>Ice and Climate:</b> Ice caps and glaciers play a significant role in the Earth's climate by reflecting sunlight and helping to maintain a balanced energy budget. As global temperatures rise, ice melts, reducing the Earth's albedo (reflectivity), which in turn accelerates warming. This feedback loop is a key driver of climate change, particularly in polar regions.
   </p>
-  <p ">
+  <p>
     <b>Human Impact on Climate:</b> Human activities, including industrialization, deforestation, and agriculture, have significantly altered the Earth's climate. The release of greenhouse gases, especially carbon dioxide, from burning fossil fuels, has caused global temperatures to rise. This warming has led to more extreme weather patterns, rising sea levels, and disruptions to ecosystems worldwide.
   </p>
-  <p ">
+  <p >
     <b>Conclusion:</b> Understanding climate science is essential for addressing the challenges posed by climate change. The interactions between the atmosphere, oceans, land, and ice are complex, but by studying these systems, scientists can better predict and mitigate the impacts of climate change. Protecting the planet's climate requires collective action to reduce greenhouse gas emissions and promote sustainable practices for future generations.
   </p>
                 </CardContent>
@@ -317,16 +317,16 @@ export function EcosimLandingPage() {
                   <p ">
     <b>Global Conservation Strategies:</b> Conservation efforts are critical to preserving Earth's biodiversity and ecosystems. Initiatives range from establishing protected areas like national parks and wildlife reserves to restoring damaged habitats. Efforts are being made to conserve both terrestrial and marine environments, focusing on safeguarding endangered species, preventing habitat loss, and mitigating the impacts of climate change. Through international collaborations and local community efforts, conservation strategies aim to ensure the survival of species and ecosystems for future generations.
   </p>
-  <p ">
+  <p>
     <b>Success Stories:</b> Around the world, many conservation projects have yielded successful results. For example, the recovery of the giant panda population in China through focused breeding programs and habitat protection has been a significant achievement. Similarly, the restoration of coral reefs in the Caribbean and Pacific, through coral planting initiatives and reducing overfishing, has shown positive outcomes. These success stories highlight the power of collective action in preserving the planet’s biodiversity.
   </p>
-  <p ">
+  <p>
     <b>Wildlife Protection:</b> The protection of endangered species is a key aspect of global conservation efforts. Organizations such as the World Wildlife Fund (WWF) and the International Union for Conservation of Nature (IUCN) work tirelessly to monitor species at risk of extinction and to implement strategies aimed at reducing threats such as poaching, habitat destruction, and climate change. Through legal frameworks, awareness campaigns, and direct interventions, wildlife protection efforts continue to evolve, offering hope for endangered species.
   </p>
-  <p ">
+  <p>
     <b>Community Involvement:</b> Local communities play a vital role in conservation efforts. In many parts of the world, conservation programs empower communities to take charge of preserving their natural environments. By promoting sustainable practices like eco-tourism, sustainable agriculture, and forest management, these initiatives help reduce environmental degradation while improving the livelihoods of local populations. The success of community-based conservation initiatives demonstrates that people and nature can coexist harmoniously.
   </p>
-  <p ">
+  <p>
     <b>Conclusion:</b> Conservation efforts are more important than ever in the fight to protect our planet's ecosystems and biodiversity. From grassroots projects to international treaties, these efforts bring people together with a shared purpose of safeguarding the future of life on Earth. Continued dedication and innovation in conservation practices will ensure that we protect the planet's natural wonders for future generations to experience and enjoy.
   </p>
                 </CardContent>
