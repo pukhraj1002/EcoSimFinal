@@ -85,10 +85,7 @@ export function EcosimLandingPage() {
               <Info className="mr-1" size={16} />
               Information
             </Link>
-            <Link
-              href="#iot"
-              className="hover:underline flex items-center"
-            >
+            <Link href="#iot" className="hover:underline flex items-center">
               <Clock className="mr-1" size={16} />
               IOT Simulation
             </Link>
@@ -135,10 +132,7 @@ export function EcosimLandingPage() {
               <Info className="mr-1" size={16} />
               Information
             </Link>
-            <Link
-              href="#iot"
-              className="hover:underline flex items-center"
-            >
+            <Link href="#iot" className="hover:underline flex items-center">
               <Clock className="mr-1" size={16} />
               IOT Simulation
             </Link>
@@ -198,26 +192,26 @@ export function EcosimLandingPage() {
         </section>
 
         <section id="quiz" className="mb-16">
-  <h2 className="text-3xl font-bold mb-4">Environmental Quiz</h2>
-  <Card>
-    <CardHeader>
-      <CardTitle>Test Your Knowledge</CardTitle>
-      <CardDescription>
-        Take our quiz to learn more about Earths ecosystems and climate
-      </CardDescription>
-    </CardHeader>
-    <CardContent>
-      <iframe
-        src="https://eco-sim-quiz.vercel.app/"
-        width="100%"
-        height="600"
-        className="mt-4 border rounded-lg"
-        title="Environmental Quiz"
-        allowFullScreen
-      ></iframe>
-    </CardContent>
-  </Card>
-</section>
+          <h2 className="text-3xl font-bold mb-4">Environmental Quiz</h2>
+          <Card>
+            <CardHeader>
+              <CardTitle>Test Your Knowledge</CardTitle>
+              <CardDescription>
+                Take our quiz to learn more about Earths ecosystems and climate
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <iframe
+                src="https://eco-sim-quiz.vercel.app/"
+                width="100%"
+                height="600"
+                className="mt-4 border rounded-lg"
+                title="Environmental Quiz"
+                allowFullScreen
+              ></iframe>
+            </CardContent>
+          </Card>
+        </section>
 
         <section id="interactive-map" className="mb-16">
           <h2 className="text-3xl font-bold mb-4">Interactive Map</h2>
@@ -354,15 +348,25 @@ export function EcosimLandingPage() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              
-              <div className="mt-4 aspect-video bg-gray-200 flex items-center justify-center rounded-lg overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=400&width=800"
-                  alt="Climate Time Machine Visualization"
-                  width={800}
-                  height={400}
-                  className="object-cover w-full h-full"
-                />
+              <div
+                className="relative overflow-hidden w-full"
+                style={{
+                  height: "750px", // 400px + 200px extra height
+                  width: "800px",
+                }}
+              >
+                <iframe
+                  src="https://climate.nasa.gov/interactives/climate-time-machine/?intent=021"
+                  title="Specific Section"
+                  className="absolute"
+                  style={{
+                    top: "-180px",
+                    height: "calc(100% + 450px)", // Add 200px to both the top and bottom
+                    width: "100%",
+                  }}
+                  frameBorder="0"
+                  scrolling="no"
+                ></iframe>
               </div>
             </CardContent>
           </Card>
