@@ -20,6 +20,7 @@ import {
   Menu,
   ChevronDown,
   Map,
+  Monitor,
 } from "lucide-react";
 
 export function EcosimLandingPage() {
@@ -86,7 +87,7 @@ export function EcosimLandingPage() {
               Information
             </Link>
             <Link href="#iot" className="hover:underline flex items-center">
-              <Clock className="mr-1" size={16} />
+              <Monitor className="mr-1" size={16} />
               IOT Simulation
             </Link>
             <Link
