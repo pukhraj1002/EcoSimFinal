@@ -225,6 +225,7 @@ export function EcosimLandingPage() {
                 <iframe
                   src="https://map-iota-ebon.vercel.app/"
                   allowFullScreen
+                  allow="geolocation"
                   allow="autoplay; fullscreen; xr-spatial-tracking"
                   className="absolute top-[100px] left-0 w-full h-[650px]"
                 ></iframe>
