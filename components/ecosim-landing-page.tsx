@@ -20,6 +20,7 @@ import {
   Menu,
   ChevronDown,
   Map,
+  Monitor,
 } from "lucide-react";
 
 export function EcosimLandingPage() {
@@ -86,7 +87,7 @@ export function EcosimLandingPage() {
               Information
             </Link>
             <Link href="#iot" className="hover:underline flex items-center">
-              <Clock className="mr-1" size={16} />
+              <Monitor className="mr-1" size={16} />
               IOT Simulation
             </Link>
             <Link
@@ -235,7 +236,7 @@ export function EcosimLandingPage() {
           </Card>
         </section>
 
-        <section id="information" className="mb-16">
+       <section id="information" className="mb-16">
           <h2 className="text-3xl font-bold mb-4">Information Center</h2>
           <Tabs defaultValue="ecosystems">
             <TabsList>
