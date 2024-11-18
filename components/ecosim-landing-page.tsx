@@ -261,7 +261,7 @@ export function EcosimLandingPage() {
       <Card className="bg-white shadow-md p-6 rounded-lg">
         <CardHeader>
           <CardTitle className="text-2xl font-bold text-gray-700 mb-2">
-            Earth's Ecosystems
+            Earths Ecosystems
           </CardTitle>
           <CardDescription className="text-gray-600">
             Learn about the diverse ecosystems on our planet.
@@ -288,7 +288,7 @@ export function EcosimLandingPage() {
             and occasional trees.
           </p>
           <p>
-            <b>Oceans:</b> Oceans cover about 70% of the Earth's surface and are
+            <b>Oceans:</b> Oceans cover about 70% of the Earths surface and are
             vital to life on Earth.
           </p>
           <p>
@@ -296,7 +296,7 @@ export function EcosimLandingPage() {
             where harsh winds and low temperatures dominate.
           </p>
           <p>
-            <b>Conclusion:</b> Exploring Earth's ecosystems is a reminder of the
+            <b>Conclusion:</b> Exploring Earths ecosystems is a reminder of the
             interconnectedness of all life.
           </p>
         </CardContent>
@@ -310,7 +310,7 @@ export function EcosimLandingPage() {
             Climate Science
           </CardTitle>
           <CardDescription className="text-gray-600">
-            Understand the factors affecting Earth's climate.
+            Understand the factors affecting Earths climate.
           </CardDescription>
         </CardHeader>
         <CardContent className="text-gray-700 leading-7 space-y-4">
@@ -319,25 +319,25 @@ export function EcosimLandingPage() {
             land, and ice that shape our climate.
           </p>
           <p>
-            <b>Atmospheric Interactions:</b> The Earth's atmosphere is a crucial
+            <b>Atmospheric Interactions:</b> The Earths atmosphere is a crucial
             factor in regulating its climate.
           </p>
           <p>
             <b>Oceans and Climate:</b> Oceans play a vital role in regulating the
-            Earth's climate by absorbing and distributing heat around the planet.
+            Earths climate by absorbing and distributing heat around the planet.
           </p>
           <p>
-            <b>Land Surface and Climate:</b> The Earth's land surface influences
+            <b>Land Surface and Climate:</b> The Earths land surface influences
             climate patterns through its interactions with the atmosphere.
           </p>
           <p>
             <b>Ice and Climate:</b> Ice caps and glaciers play a significant role in
-            the Earth's climate.
+            the Earths climate.
           </p>
           <p>
             <b>Human Impact on Climate:</b> Human activities, including
             industrialization and deforestation, have significantly altered the
-            Earth's climate.
+            Earths climate.
           </p>
           <p>
             <b>Conclusion:</b> Understanding climate science is essential for
@@ -364,7 +364,7 @@ export function EcosimLandingPage() {
           </p>
           <p>
             <b>Global Conservation Strategies:</b> Conservation efforts are
-            critical to preserving Earth's biodiversity and ecosystems.
+            critical to preserving Earths biodiversity and ecosystems.
           </p>
           <p>
             <b>Success Stories:</b> Around the world, many conservation projects
@@ -380,7 +380,7 @@ export function EcosimLandingPage() {
           </p>
           <p>
             <b>Conclusion:</b> Conservation efforts are more important than ever in
-            the fight to protect our planet's ecosystems and biodiversity.
+            the fight to protect our planets ecosystems and biodiversity.
           </p>
         </CardContent>
       </Card>
