@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoSim Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <h1 id="title">EcoSim Quiz</h1>
+    <div id="scenario-container" class="scenario-container">
+      <h2 id="scenario-title">Scenario Title</h2>
+      <p id="scenario-description">Scenario description goes here.</p>
+      <div id="options-container" class="options-container"></div>
+    </div>
+    <div class="feedback-container" id="feedback-container"></div>
+    <button id="next-btn" class="next-btn" style="display: none;">Next</button>
+  </div>
+  <div class="result-container" id="results" style="display: none;">
+    <h2>Quiz Results</h2>
+    <p id="score"></p>
+  
+    <!-- Add the canvas for the pie chart -->
+    <canvas id="score-chart" width="200" height="200"></canvas>
+  
+    <div id="detailed-feedback"></div>
+    <button id="restart-btn" style="display: none;">Restart Quiz</button>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
