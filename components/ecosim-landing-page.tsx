@@ -178,13 +178,13 @@ export function EcosimLandingPage() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="w-full h-[500px] overflow-hidden relative rounded-lg">
+              <div className="w-full h-[800px] overflow-hidden relative rounded-lg">
                 <iframe
                   title="Earth"
                   src="https://eyes.nasa.gov/apps/earth/#/satellites"
                   allowFullScreen
                   allow="autoplay; fullscreen; xr-spatial-tracking"
-                  className="absolute top-[-100px] left-0 w-full h-[800px]"
+                  className="absolute  left-0 w-full h-[800px]"
                 ></iframe>
               </div>
             </CardContent>
