@@ -149,17 +149,17 @@ export function EcosimLandingPage() {
 
       <main className="container mx-auto mt-8 px-4">
         <section id="hero" className="text-center mb-16 relative">
-          <div className="w-full h-[400px] overflow-hidden relative rounded-lg">
+          <div className="w-full h-[700px] overflow-hidden relative rounded-lg">
             <iframe
               title="Earth"
               src="https://sketchfab.com/models/41fc80d85dfd480281f21b74b2de2faa/embed"
               allowFullScreen
               allow="autoplay; fullscreen; xr-spatial-tracking"
-              className="absolute top-[-100px] left-0 w-full h-[800px]"
+              className="absolute top-[-100px] left-0 w-full h-[1000px]"
             ></iframe>
           </div>
 
-          <h2 className="text-4xl font-bold mb-4">Welcome to EcoSim</h2>
+          <h2 className="text-4xl font-bold mb-4 mt-4">Welcome to EcoSim</h2>
           <p className="text-xl mb-8">
             Explore Earths ecosystems and climate through interactive
             simulations and data visualizations
