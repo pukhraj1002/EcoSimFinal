@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "author": "Mayssa Fezai",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-pi-pico",
+      "id": "pico",
+      "top": -3.15,
+      "left": 109.2,
+      "attrs": { "env": "micropython-20231005-v1.21.0" }
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -95.7,
+      "left": 234.6,
+      "attrs": { "temperature": "80", "humidity": "0" }
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": -57.9,
+      "left": 263.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-ntc-temperature-sensor",
+      "id": "ntc1",
+      "top": -74.7,
+      "left": 373.9,
+      "rotate": 90,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "dht1:VCC", "pico:3V3", "red", [ "v28.8" ] ],
+    [ "dht1:GND", "pico:GND.7", "black", [ "v0" ] ],
+    [ "dht1:SDA", "pico:GP4", "yellow", [ "v0" ] ],
+    [ "ldr1:GND", "pico:GND.7", "black", [ "v0" ] ],
+    [ "ldr1:VCC", "pico:3V3", "red", [ "v38.4", "h-163.2", "v-48" ] ],
+    [ "ldr1:AO", "pico:GP28", "yellow", [ "v0" ] ],
+    [ "ntc1:VCC", "pico:3V3", "red", [ "v67.2", "h-240", "v-48" ] ],
+    [ "ntc1:GND", "ldr1:GND", "black", [ "v48", "h-96" ] ],
+    [ "ntc1:OUT", "pico:GP27", "yellow", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
