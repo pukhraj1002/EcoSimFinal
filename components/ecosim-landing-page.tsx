@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -150,17 +149,17 @@ export function EcosimLandingPage() {
 
       <main className="container mx-auto mt-8 px-4">
         <section id="hero" className="text-center mb-16 relative">
-          <div className="w-full h-[400px] overflow-hidden relative rounded-lg">
+          <div className="w-full h-[700px] overflow-hidden relative rounded-lg">
             <iframe
               title="Earth"
               src="https://sketchfab.com/models/41fc80d85dfd480281f21b74b2de2faa/embed"
               allowFullScreen
               allow="autoplay; fullscreen; xr-spatial-tracking"
-              className="absolute top-[-100px] left-0 w-full h-[800px]"
+              className="absolute top-[-100px] left-0 w-full h-[1000px]"
             ></iframe>
           </div>
 
-          <h2 className="text-4xl font-bold mb-4">Welcome to EcoSim</h2>
+          <h2 className="text-4xl font-bold mb-4 mt-4">Welcome to EcoSim</h2>
           <p className="text-xl mb-8">
             Explore Earths ecosystems and climate through interactive
             simulations and data visualizations
@@ -179,13 +178,13 @@ export function EcosimLandingPage() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="w-full h-[400px] overflow-hidden relative rounded-lg">
+              <div className="w-full h-[800px] overflow-hidden relative rounded-lg">
                 <iframe
                   title="Earth"
                   src="https://eyes.nasa.gov/apps/earth/#/satellites"
                   allowFullScreen
                   allow="autoplay; fullscreen; xr-spatial-tracking"
-                  className="absolute top-[-100px] left-0 w-full h-[800px]"
+                  className="absolute  left-0 w-full h-[800px]"
                 ></iframe>
               </div>
             </CardContent>
@@ -219,103 +218,176 @@ export function EcosimLandingPage() {
           <Card>
             <CardHeader>
               <CardTitle>Explore Global Environmental Data</CardTitle>
-              <CardDescription>
-                Interact with layers of climate and ecosystem data
-              </CardDescription>
+              <div>Interact with layers of climate and ecosystem data</div>
             </CardHeader>
             <CardContent>
-              <div className="aspect-video bg-gray-200 flex items-center justify-center rounded-lg overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=400&width=800"
-                  alt="Interactive Map"
-                  width={800}
-                  height={400}
-                  className="object-cover w-full h-full"
-                />
+              <div className="w-full h-[800px] overflow-hidden relative rounded-lg -mt-[100px]">
+                <iframe
+                  src="https://map-iota-ebon.vercel.app/"
+                  allowFullScreen
+                  allow="autoplay; fullscreen; xr-spatial-tracking; geolocation"
+                  className="absolute top-[100px] left-0 w-full h-[650px]"
+                ></iframe>
               </div>
             </CardContent>
           </Card>
         </section>
 
-        <section id="information" className="mb-16">
-          <h2 className="text-3xl font-bold mb-4">Information Center</h2>
-          <Tabs defaultValue="ecosystems">
-            <TabsList>
-              <TabsTrigger value="ecosystems">Ecosystems</TabsTrigger>
-              <TabsTrigger value="climate">Climate</TabsTrigger>
-              <TabsTrigger value="conservation">Conservation</TabsTrigger>
-            </TabsList>
-            <TabsContent value="ecosystems">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Earths Ecosystems</CardTitle>
-                  <CardDescription>
-                    Learn about the diverse ecosystems on our planet
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p>
-                    Explore the intricate web of life in various biomes, from
-                    tropical rainforests to arctic tundras.
-                  </p>
-                  <Image
-                    src="/placeholder.svg?height=200&width=400"
-                    alt="Diverse Ecosystems"
-                    width={400}
-                    height={200}
-                    className="mt-4 rounded-lg"
-                  />
-                </CardContent>
-              </Card>
-            </TabsContent>
-            <TabsContent value="climate">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Climate Science</CardTitle>
-                  <CardDescription>
-                    Understand the factors affecting Earths climate
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p>
-                    Discover the complex interactions between the atmosphere,
-                    oceans, land, and ice that shape our climate.
-                  </p>
-                  <Image
-                    src="/placeholder.svg?height=200&width=400"
-                    alt="Climate Factors"
-                    width={400}
-                    height={200}
-                    className="mt-4 rounded-lg"
-                  />
-                </CardContent>
-              </Card>
-            </TabsContent>
-            <TabsContent value="conservation">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Conservation Efforts</CardTitle>
-                  <CardDescription>
-                    Learn about global initiatives to protect our planet
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p>
-                    Explore conservation strategies and success stories from
-                    around the world.
-                  </p>
-                  <Image
-                    src="/placeholder.svg?height=200&width=400"
-                    alt="Conservation Efforts"
-                    width={400}
-                    height={200}
-                    className="mt-4 rounded-lg"
-                  />
-                </CardContent>
-              </Card>
-            </TabsContent>
-          </Tabs>
-        </section>
+        <section id="information" className="mb-16 p-8 bg-gray-50 rounded-lg shadow-lg">
+  <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">Information Center</h2>
+  <Tabs defaultValue="ecosystems" className="max-w-6xl mx-auto">
+    <TabsList className=" mx-auto flex w-[600px] justify-center space-x-4 mb-6">
+      <TabsTrigger
+        value="ecosystems"
+        className="px-6 py-2 rounded-full font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-400"
+      >
+        Ecosystems
+      </TabsTrigger>
+      <TabsTrigger
+        value="climate"
+        className="px-6 py-2 rounded-full font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-400"
+      >
+        Climate
+      </TabsTrigger>
+      <TabsTrigger
+        value="conservation"
+        className="px-6 py-2 rounded-full font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-400"
+      >
+        Conservation
+      </TabsTrigger>
+    </TabsList>
+
+    <TabsContent value="ecosystems">
+      <Card className="bg-white shadow-md p-6 rounded-lg">
+        <CardHeader>
+          <CardTitle className="text-2xl font-bold text-gray-700 mb-2">
+            Earths Ecosystems
+          </CardTitle>
+          <CardDescription className="text-gray-600">
+            Learn about the diverse ecosystems on our planet.
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="text-gray-700 leading-7 space-y-4">
+          <p>
+            Explore the intricate web of life in various biomes, from tropical
+            rainforests to Arctic tundras.
+          </p>
+          <p>
+            <b>Tropical Rainforests:</b> Tropical rainforests, often referred to
+            as the lungs of the Earth, are teeming with life. Located near the
+            equator, these forests receive abundant rainfall year-round, creating a
+            lush, green environment.
+          </p>
+          <p>
+            <b>Deserts:</b> Deserts are defined by their dry conditions, receiving
+            less than 10 inches of rain per year. Despite the harsh climate, deserts
+            are not devoid of life.
+          </p>
+          <p>
+            <b>Grasslands:</b> Grasslands are vast, open areas dominated by grasses
+            and occasional trees.
+          </p>
+          <p>
+            <b>Oceans:</b> Oceans cover about 70% of the Earths surface and are
+            vital to life on Earth.
+          </p>
+          <p>
+            <b>Arctic Tundra:</b> The Arctic tundra is a cold, barren landscape
+            where harsh winds and low temperatures dominate.
+          </p>
+          <p>
+            <b>Conclusion:</b> Exploring Earths ecosystems is a reminder of the
+            interconnectedness of all life.
+          </p>
+        </CardContent>
+      </Card>
+    </TabsContent>
+
+    <TabsContent value="climate">
+      <Card className="bg-white shadow-md p-6 rounded-lg">
+        <CardHeader>
+          <CardTitle className="text-2xl font-bold text-gray-700 mb-2">
+            Climate Science
+          </CardTitle>
+          <CardDescription className="text-gray-600">
+            Understand the factors affecting Earths climate.
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="text-gray-700 leading-7 space-y-4">
+          <p>
+            Discover the complex interactions between the atmosphere, oceans,
+            land, and ice that shape our climate.
+          </p>
+          <p>
+            <b>Atmospheric Interactions:</b> The Earths atmosphere is a crucial
+            factor in regulating its climate.
+          </p>
+          <p>
+            <b>Oceans and Climate:</b> Oceans play a vital role in regulating the
+            Earths climate by absorbing and distributing heat around the planet.
+          </p>
+          <p>
+            <b>Land Surface and Climate:</b> The Earths land surface influences
+            climate patterns through its interactions with the atmosphere.
+          </p>
+          <p>
+            <b>Ice and Climate:</b> Ice caps and glaciers play a significant role in
+            the Earths climate.
+          </p>
+          <p>
+            <b>Human Impact on Climate:</b> Human activities, including
+            industrialization and deforestation, have significantly altered the
+            Earths climate.
+          </p>
+          <p>
+            <b>Conclusion:</b> Understanding climate science is essential for
+            addressing the challenges posed by climate change.
+          </p>
+        </CardContent>
+      </Card>
+    </TabsContent>
+
+    <TabsContent value="conservation">
+      <Card className="bg-white shadow-md p-6 rounded-lg">
+        <CardHeader>
+          <CardTitle className="text-2xl font-bold text-gray-700 mb-2">
+            Conservation Efforts
+          </CardTitle>
+          <CardDescription className="text-gray-600">
+            Learn about global initiatives to protect our planet.
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="text-gray-700 leading-7 space-y-4">
+          <p>
+            Explore conservation strategies and success stories from around the
+            world.
+          </p>
+          <p>
+            <b>Global Conservation Strategies:</b> Conservation efforts are
+            critical to preserving Earths biodiversity and ecosystems.
+          </p>
+          <p>
+            <b>Success Stories:</b> Around the world, many conservation projects
+            have yielded successful results.
+          </p>
+          <p>
+            <b>Wildlife Protection:</b> The protection of endangered species is a
+            key aspect of global conservation efforts.
+          </p>
+          <p>
+            <b>Community Involvement:</b> Local communities play a vital role in
+            conservation efforts.
+          </p>
+          <p>
+            <b>Conclusion:</b> Conservation efforts are more important than ever in
+            the fight to protect our planets ecosystems and biodiversity.
+          </p>
+        </CardContent>
+      </Card>
+    </TabsContent>
+  </Tabs>
+</section>
+
 
         <section id="iot" className="mb-16">
           <h2 className="text-3xl font-bold mb-4">IoT Simulation</h2>
@@ -349,25 +421,28 @@ export function EcosimLandingPage() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div
-                className="relative overflow-hidden w-full"
-                style={{
-                  height: "750px", // 400px + 200px extra height
-                  width: "800px",
-                }}
-              >
-                <iframe
-                  src="https://climate.nasa.gov/interactives/climate-time-machine/?intent=021"
-                  title="Specific Section"
-                  className="absolute"
+              <div className="mt-4 aspect-video bg-gray-200 flex items-center justify-center rounded-lg overflow-hidden">
+                <div
+                  className="relative overflow-hidden"
                   style={{
-                    top: "-180px",
-                    height: "calc(100% + 450px)", // Add 200px to both the top and bottom
-                    width: "100%",
+                    height: "750px", // 400px + 200px extra height
+                    width: "1300px",
                   }}
-                  frameBorder="0"
-                  scrolling="no"
-                ></iframe>
+                >
+                  <iframe
+                    src="https://climate.nasa.gov/interactives/climate-time-machine/?intent=021"
+                    title="Specific Section"
+                    className="absolute"
+                    style={{
+                      padding: "10px",
+                      top: "-210px",
+                      height: "300%", // Add 200px to both the top and bottom
+                      width: "100%",
+                    }}
+                    frameBorder="0"
+                    scrolling="no"
+                  ></iframe>
+                </div>
               </div>
             </CardContent>
           </Card>
